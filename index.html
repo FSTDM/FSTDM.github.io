@@ -12,6 +12,17 @@
       https://www.uuidgenerator.net/version1<br/>
       https://pyodide.org/en/stable/console.html<br/>
     </a><br/>
+    <pre>
+from js import XMLHttpRequest
+
+def HttpGet(link):
+	r = XMLHttpRequest.new()
+	r.open("GET",link,False)
+	r.send()
+	return str(r.response)
+
+HttpGet("https://fstdm.github.io/index.html")
+    </pre>
     
   </body>
 </html>
