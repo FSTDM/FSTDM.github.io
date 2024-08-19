@@ -15,7 +15,5 @@ class GithubAPI():
             result.append((entry["name"],entry["type"]))
         return result
 
-print("This should make the updates much quicker")
-G = GithubAPI("FSTDM","WBP")
-R = G.get("index.py")
-print(R)
+exec(GithubAPI("FSTDM","WBP").get("index.py").decode('utf-8'))
+
