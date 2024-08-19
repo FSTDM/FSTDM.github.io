@@ -4,7 +4,7 @@ import urllib.request
 
 print("[BOOTSTRAP] BEGIN")
 url = "https://api.github.com/repos/FSTDM/WBP/contents/index.py"
-print("\tdownloading contents")
+print("\tdownloading")
 response = urllib.request.urlopen(url).read()
 jsonData = json.loads(response)
 filecontent = jsonData["content"]
