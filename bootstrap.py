@@ -1,5 +1,5 @@
 #https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28
-#Github API updates changes quicker than HTTP Request
+#Github API updates quicker than HTTP Request
 import base64
 import urllib.request
 url = "https://api.github.com/repos/FSTDM/WBP/contents/index.py"
