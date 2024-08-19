@@ -15,5 +15,5 @@ class GithubAPI():
             result.append((entry["name"],entry["type"]))
         return result
 
-exec(GithubAPI("FSTDM","WBP").get("index.py").decode('utf-8'))
+exec(GithubAPI("FSTDM","WBP").get("index.py").[2].decode('utf-8'))
 
